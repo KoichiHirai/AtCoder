@@ -1,0 +1,5 @@
+# https://atcoder.jp/contests/abc042/tasks/abc042_a
+
+x = [int(x) for x in input().split()]
+
+print("YES") if x.count(5) == 2 and x.count(7) == 1 else print("NO")
