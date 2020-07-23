@@ -15,9 +15,6 @@ for i in range(n):
 		testimony.append(list(map(int,input().split())))
 	testimonies.append(testimony)
 
-# print(list_a)
-# print(testimonies)
-
 for i in range(1 << n): # 部分和の計算　i=2は"0b10" 
 	result = 0
 	for j in range(n): # 各桁を確認 jは桁数を表す
