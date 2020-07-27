@@ -3,9 +3,6 @@
 import math
 a,b = input().split()
 number = int(a + b)
-# print(number)
-# print(math.sqrt(number))
-# print((math.sqrt(number))**2
 
 sqrtNumber = math.sqrt(number)
 
