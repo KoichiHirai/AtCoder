@@ -22,7 +22,7 @@ for i in range(1 << n): # 部分和の計算　i=2は"0b10"  正直者の組み�
 		if i & (1 << (j)): #trueだった場合はj番目は正直者
 			result += 1
 			for k in range(list_a[j]): #正直者の証言を確認
-				if not i ^ (testimonies[j][k][1] << testimonies[j][k][0]-1): # 虚偽の証言をしている時
+				if not i ^ (testimonies[j][k][1] << testimonies[j][k][0]-1): # 虚偽の証言をしている時 ここが怪しい
 					flag = False
 					break
 			# if flag == False:
