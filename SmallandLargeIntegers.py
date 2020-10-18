@@ -10,5 +10,12 @@ if length > k * 2:
 		else:
 			print(numbers[i-k*2])
 else:
-	for i in range(length):
-		print(numbers[i])
+	for i in numbers:
+		print(i)
+
+# a,b,k = map(int,input().split())
+# numbers = list(range(a,b+1))
+# for i in range(k):
+# 	print(numbers[i])
+# for i in range(max(k+1, len(numbers)-k),len(numbers)):
+# 	print(numbers[i])
