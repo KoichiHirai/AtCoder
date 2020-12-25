@@ -1,4 +1,5 @@
 # https://atcoder.jp/contests/abc150/tasks/abc150_c
+# 解法が違う
 n = int(input())
 order = [1,1]
 
