@@ -2,16 +2,15 @@
 s = list(input())
 t = list(input())
 len_string = len(s)
-string = ["a"] * len_string
-for i in range(len_string-1):
-	string[0] = t[-1]
-	for j in range(0,len_string-1):
-		string[i+1] = t[j]
-	print("string: " + str(string))
-	if s == string:
+string = s
+for i in range(len_string):
+	if t == string:
 		print("Yes")
 		exit()
 	else:
-		t = string
-		string = ["a"] * len_string
+		s = string
+		string = ["0"] * len_string
+		string[0] = s[-1]
+		for j in range(0,len_string-1):
+			string[j+1] = s[j]
 print("No")
